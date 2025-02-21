@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+    gap: 10px;
+    justify-content: center;
+    margin: 50px;
+}
+.box{
+    background-color: lightblue;
+
+    border: lightgreen solid 2px;
+    border-radius: 8px;
+    font-size: 4em;
+    padding: 40px 20px;
+    color: steelblue;
+    text-align: center;
+}
+.selection{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    justify-content: center;
+    align-items: center;
+}
+.selection span{
+    background-color: lightblue;
+    font-size: 3em;
+}
+.tictacgame{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
