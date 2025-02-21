@@ -24,7 +24,7 @@ function select(box){
 
 }
 function jouer(){
-    resetGame()
+    // resetGame()
     span1.style.backgroundColor = "red"
             boxes.forEach((box)=>{
             box.addEventListener("click",()=>{select(box)})
@@ -69,7 +69,7 @@ function checkligne(){
                         // window.alert(boxes[j].textContent + " win it");
                         span3.textContent += boxes[j].textContent + " win it";
                         // play();
-                        jouer()
+                        // jouer()
                         // resetGame()
 
                          count++
@@ -150,6 +150,7 @@ function resetGame(){
         box.style.pointerEvents = "auto"
         box.textContent = ""
     })
+    jouer()
 
 }
 
