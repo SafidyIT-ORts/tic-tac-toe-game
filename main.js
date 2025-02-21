@@ -76,7 +76,7 @@ function checkcolonne(){
                  (boxes[0].textContent === "❌" && boxes[3].textContent === "❌" && boxes[6].textContent === "❌") )
                     {
                          count++;
-                         window.alert(boxes[0].textContent + "gagne le jeu");
+                         window.alert(boxes[0].textContent + " gagne le jeu");
                     }
                     else if((boxes[1].textContent === "⭕" && boxes[4].textContent === "⭕" && boxes[7].textContent === "⭕")  || 
                               (boxes[2].textContent === "❌" && boxes[4].textContent === "❌" && boxes[7].textContent === "❌") )
@@ -113,6 +113,14 @@ function checkidiagonale(){
    
        
       console.log(count)
+}
+
+function check(){
+    checkcolonne();
+    checkligne();
+    checkidiagonale();
+
+
 }
 
 
